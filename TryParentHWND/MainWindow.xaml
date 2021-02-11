@@ -1,0 +1,95 @@
+﻿<Window x:Class="TryParentHWND.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:WinForms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:TryParentHWND"
+        mc:Ignorable="d"
+        Title="MainWindow" Width="1280" Height="720" SizeChanged="Window_Resize" Closed="MainWindow_FormClosed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+
+        <!-- Row 0 -->
+        <Menu Grid.Row="0" HorizontalAlignment = "Stretch" VerticalAlignment = "Top" Height="20" >
+            <MenuItem Header="File" >
+                <MenuItem Header="Item 1" HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header="Item 2" HorizontalAlignment = "Left" Width = "140" />
+                <MenuItem Header="Item 3" HorizontalAlignment = "Left" Width = "140" />
+            </MenuItem>
+            <MenuItem Header="Edit" >
+                <MenuItem Header="Undone" HorizontalAlignment="Left" Width="140" />
+            </MenuItem>
+            <MenuItem Header="View" >
+                <MenuItem Header="Item 1" />
+            </MenuItem>
+            <MenuItem Header="World" >
+                <MenuItem Header="Item 1" />
+            </MenuItem>
+            <MenuItem Header="NavMesh" >
+                <MenuItem Header="Item 1" />
+            </MenuItem>
+            <MenuItem Header="Character" >
+                <MenuItem Header="Item 1" />
+            </MenuItem>
+            <MenuItem Header="Gameplay" >
+                <MenuItem Header="Item 1" />
+            </MenuItem>
+            <MenuItem Header="Help" >
+                <MenuItem Header="Item 1" />
+            </MenuItem>
+        </Menu>
+
+        <!-- Row 1 -->
+        <Rectangle Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stroke="Black" StrokeThickness="0.1"  Fill="#e9e9e9" />
+        <Button Grid.Row="1" Height="20" Width="20" Margin="5,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Click="Button_Click111"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="30,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="55,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="80,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="105,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="130,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="155,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="180,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="205,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="230,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="255,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="280,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="305,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="330,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="355,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="380,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="405,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="430,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="455,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        <Button Grid.Row="1" Height="20" Width="20" Margin="480,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+
+        <!-- Row 2 -->
+        <Grid Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.3*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <GridSplitter Grid.Column="1" Width="3" />
+
+            <DockPanel Grid.Column="2" LastChildFill="True" >
+                <WindowsFormsHost VerticalAlignment="Stretch" HorizontalAlignment="Stretch" >
+                    <WinForms:Panel x:Name="panel1" />
+                </WindowsFormsHost>
+                <!-- x:Name="panel1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" /> -->
+            </DockPanel>
+
+        </Grid>
+
+        <!-- Row 3 -->
+        <Rectangle Grid.Row="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Stroke="Black" StrokeThickness="0.1"  Fill="#e9e9e9" />
+        <ProgressBar Grid.Row="3" HorizontalAlignment="Right" Height="10" Margin="0,0,5,0" VerticalAlignment="Center" Width="100" />
+
+    </Grid>
+</Window>
