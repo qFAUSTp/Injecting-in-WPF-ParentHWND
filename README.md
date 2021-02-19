@@ -1,4 +1,4 @@
-# Injecting-in-WPF-ParentHWND
+# Injecting in WPF ParentHWND
  
 Injecting Unity game window into WPF interface using ParentHWND.
 
